@@ -13,7 +13,7 @@
         var xAxis = d3.svg.axis().scale(xRange);
         var yAxis = d3.svg.axis().scale(yRange);
         vis.append("svg:g").call(xAxis);
-        vis.append("svg:g").call(yAxis);
+        vis.append("svg:g").call(yAxis).attr("transform", "translate(0,40)");
       }
     </script>
   </head>
